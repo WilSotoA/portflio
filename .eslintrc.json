@@ -19,7 +19,6 @@
     ],
     "rules": {
         "react/react-in-jsx-scope": "off",
-        "react/react-prop-types": "off",
-        "@typescript-eslint/explicit-function-return-type": "off"
+        "react/react-prop-types": "off"
     }
 }

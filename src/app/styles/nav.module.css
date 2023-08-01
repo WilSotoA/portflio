@@ -1,0 +1,97 @@
+.navbar {
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    max-height: 6rem;
+}
+
+.containerLogo {
+    width: 11.75rem;
+    height: 4.375rem;
+    display: flex;
+    align-items: center;
+}
+
+.containerLogo img {
+    width: 100%;
+    height: 85%;
+}
+
+.sections {
+    display: flex;
+    gap: 2rem;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.sectionItem {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    padding-bottom: 0.2rem;
+    color: var(--tertiary-color);
+}
+
+.sectionItem::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 5px;
+    background-color: var(--secondary-color);
+    transition: width 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.sectionItem:hover::before {
+    width: 100%;
+}
+
+
+.sectionItem span {
+    align-self: flex-start;
+}
+
+.links {
+    display: flex;
+    gap: 1rem;
+}
+
+.icons {
+    display: inline-block;
+    width: 3.5rem;
+    height: 3.1875rem;
+    transition: transform 0.2s ease-in-out;
+    -webkit-transition: transform 0.2s ease-in-out;
+    -moz-transition: transform 0.2s ease-in-out;
+    -ms-transition: transform 0.2s ease-in-out;
+    -o-transition: transform 0.2s ease-in-out;
+}
+
+.icons:hover {
+    transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+    -moz-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    -o-transform: scale(1.02);
+    transition: transform 0.5s ease-out;
+    -webkit-transition: transform 0.5s ease-out;
+    -moz-transition: transform 0.5s ease-out;
+    -ms-transition: transform 0.5s ease-out;
+    -o-transition: transform 0.5s ease-out;
+}
+
+.icons:hover path {
+    fill: var(--secondary-color);
+    stroke: var(--tertiary-color);
+}
