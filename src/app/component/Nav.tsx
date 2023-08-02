@@ -1,34 +1,95 @@
+'use client'
+import { useState, useEffect } from 'react'
 import Image from 'next/image'
 import styles from '../styles/nav.module.css'
-import logo from '../assets/Logo Wil.svg'
-import home from '../assets/Home.svg'
-import about from '../assets/about.svg'
-import work from '../assets/work.svg'
-import contact from '../assets/contact.svg'
+import logo from '../assets/svg/Logo Wil.svg'
+import logoBlack from '../assets/svg/Logo Wil Black.svg'
+import home from '../assets/svg/Home.svg'
+import about from '../assets/svg/about.svg'
+import work from '../assets/svg/work.svg'
+import contact from '../assets/svg/contact.svg'
 
 function Nav (): JSX.Element {
+  const [activeLink, setActiveLink] = useState('Home')
+  const [scrolled, setScrolled] = useState(false)
+
+  useEffect(() => {
+    const onScroll = (): void => {
+      window.scrollY > 50 ? setScrolled(true) : setScrolled(false)
+    }
+    window.addEventListener('scroll', onScroll)
+    return (): void => {
+      window.removeEventListener('scroll', onScroll)
+    }
+  }, [])
+
+  const onUpdateLink = (value: string): void => {
+    setActiveLink(value)
+  }
+
   return (
-    <nav className={styles.navbar}>
+    <nav className={`${styles.navbar} ${scrolled ? styles.scrolled : ''}`}>
       <div className={styles.containerLogo}>
-        <Image
-          src={logo}
-          alt="Logo de Wilmer S., con las letras < Wilmer S. /> y un icono de programador"
-        />
+        {scrolled
+          ? (
+          <Image
+            src={logoBlack}
+            alt="Logo de Wilmer S., con las letras < Wilmer S. /> y un icono de programador"
+          />
+            )
+          : (
+          <Image
+            src={logo}
+            alt="Logo de Wilmer S., con las letras < Wilmer S. /> y un icono de programador"
+          />
+            )}
       </div>
       <ul className={styles.sections}>
-        <a href="#home" className={styles.sectionItem}>
+        <a
+          href="#home"
+          className={`${styles.sectionItem} ${
+            activeLink === 'Home' ? styles.activeLink : ''
+          }`}
+          onClick={() => {
+            onUpdateLink('Home')
+          }}
+        >
           <Image src={home} alt="Icon Home" />
           <span>Home</span>
         </a>
-        <a href="#about" className={styles.sectionItem}>
+        <a
+          href="#about"
+          className={`${styles.sectionItem} ${
+            activeLink === 'About' ? styles.activeLink : ''
+          }`}
+          onClick={() => {
+            onUpdateLink('About')
+          }}
+        >
           <Image src={about} alt="Icon About" />
           <span>Skills</span>
         </a>
-        <a href="#work" className={styles.sectionItem}>
+        <a
+          href="#work"
+          className={`${styles.sectionItem} ${
+            activeLink === 'Work' ? styles.activeLink : ''
+          }`}
+          onClick={() => {
+            onUpdateLink('Work')
+          }}
+        >
           <Image src={work} alt="Icon Work" />
           <span>Work</span>
         </a>
-        <a href="#contact" className={styles.sectionItem}>
+        <a
+          href="#contact"
+          className={`${styles.sectionItem} ${
+            activeLink === 'Contact' ? styles.activeLink : ''
+          }`}
+          onClick={() => {
+            onUpdateLink('Contact')
+          }}
+        >
           <Image src={contact} alt="Icon Contact" />
           <span>Contact</span>
         </a>
