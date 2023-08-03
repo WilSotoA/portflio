@@ -40,11 +40,13 @@ function Nav (): JSX.Element {
   }
 
   return (
-    <nav className={`${styles.navbar} ${scrolled ? styles.scrolled : ''}`}>
-      <Logo scrolled={scrolled} />
-      <Sections onUpdateLink={onUpdateLink} activeLink={activeLink} />
-      <Links />
-      <BurguerMenu burguerClass={burguerClass} updateMenu={updateMenu} />
+    <>
+      <nav className={`${styles.navbar} ${scrolled ? styles.scrolled : ''}`}>
+        <Logo scrolled={scrolled} />
+        <Sections onUpdateLink={onUpdateLink} activeLink={activeLink} />
+        <Links />
+        <BurguerMenu burguerClass={burguerClass} updateMenu={updateMenu} />
+      </nav>
       {menuClass === 'disabled' || (
         <AsideBar onUpdateLink={onUpdateLink} activeLink={activeLink} />
       )}
@@ -53,7 +55,7 @@ function Nav (): JSX.Element {
           <Links />
         </footer>
       )}
-    </nav>
+    </>
   )
 }
 

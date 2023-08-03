@@ -70,7 +70,8 @@
 }
 
 
-.scrolled .sectionItem::before, .asideBar .sectionItem::before {
+.scrolled .sectionItem::before,
+.asideBar .sectionItem::before {
     background-color: var(--primary-color);
 }
 
@@ -241,9 +242,14 @@
     margin-bottom: 1rem;
     border: 1px solid var(--tertiary-color);
     border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
 }
+
 .linkFooter .links {
-    display: flex;
+    display: none;
 }
 
 @media (max-width: 1110px) {
@@ -259,5 +265,9 @@
 @media (max-width: 590px) {
     .links {
         display: none;
+    }
+
+    .linkFooter .links {
+        display: flex;
     }
 }
