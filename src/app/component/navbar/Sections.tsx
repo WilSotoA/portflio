@@ -31,7 +31,7 @@ function Sections ({ onUpdateLink, activeLink }: SectionsProps): JSX.Element {
         }}
       >
         <Image src={about} alt="Icon About" />
-        <span>Skills</span>
+        <span>Sobre Mi</span>
       </a>
       <a
         href="#work"
@@ -43,7 +43,7 @@ function Sections ({ onUpdateLink, activeLink }: SectionsProps): JSX.Element {
         }}
       >
         <Image src={work} alt="Icon Work" />
-        <span>Work</span>
+        <span>Projectos</span>
       </a>
       <a
         href="#contact"
@@ -55,7 +55,7 @@ function Sections ({ onUpdateLink, activeLink }: SectionsProps): JSX.Element {
         }}
       >
         <Image src={contact} alt="Icon Contact" />
-        <span>Contact</span>
+        <span>Contacto</span>
       </a>
     </ul>
   )

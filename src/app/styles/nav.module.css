@@ -253,7 +253,7 @@
     display: none;
 }
 
-@media (max-width: 1110px) {
+@media (max-width: 1222px) {
     .sections {
         display: none;
     }
@@ -271,7 +271,7 @@
     }
 }
 
-@media (min-width: 591px) and (max-width: 1109px) {
+@media (min-width: 591px) and (max-width: 1221px) {
     .linkFooter {
         display: none;
     }
