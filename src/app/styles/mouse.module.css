@@ -1,12 +1,13 @@
 .mouseFollower {
     position: fixed;
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     background-color: var(--secondary-color);
-    opacity: 0.2;
+    opacity: 0.1;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
     box-shadow: 0 0 3rem 3rem var(--secondary-color);
+    z-index: -1;
   }

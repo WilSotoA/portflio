@@ -133,8 +133,107 @@
     fill: var(--primary-color);
 }
 
+
+.burguerMenu {
+    display: none;
+    height: 3em;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    cursor: pointer;
+    z-index: 2000;
+    margin-right: 1rem;
+}
+
+.burguerItem {
+    width: 4em;
+    height: 20%;
+    background-color: var(--secondary-color);
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+}
+
+.burguerItem.clicked:nth-child(1) {
+    transform: rotate(45deg) translate(0.75em, 1.15em);
+    transition: ease-out 0.5s;
+    -webkit-transform: rotate(45deg) translate(0.75em, 1.15em);
+    -moz-transform: rotate(45deg) translate(0.75em, 1.15em);
+    -ms-transform: rotate(45deg) translate(0.75em, 1.15em);
+    -o-transform: rotate(45deg) translate(0.75em, 1.15em);
+    -webkit-transition: ease-out 0.5s;
+    -moz-transition: ease-out 0.5s;
+    -ms-transition: ease-out 0.5s;
+    -o-transition: ease-out 0.5s;
+}
+
+.burguerItem.clicked:nth-child(2) {
+    opacity: 0;
+    transition: ease-out 0.5s;
+    -webkit-transition: ease-out 0.5s;
+    -moz-transition: ease-out 0.5s;
+    -ms-transition: ease-out 0.5s;
+    -o-transition: ease-out 0.5s;
+}
+
+.burguerItem.clicked:nth-child(3) {
+    transform: rotate(134deg) translate(-0.6em, 1em);
+    transition: ease-out 0.5s;
+    -webkit-transform: rotate(134deg) translate(-0.6em, 1em);
+    -moz-transform: rotate(134deg) translate(-0.6em, 1em);
+    -ms-transform: rotate(134deg) translate(-0.6em, 1em);
+    -o-transform: rotate(134deg) translate(-0.6em, 1em);
+    -webkit-transition: ease-out 0.5s;
+    -moz-transition: ease-out 0.5s;
+    -ms-transition: ease-out 0.5s;
+    -o-transition: ease-out 0.5s;
+}
+
+.burguerItem.unclicked {
+    transform: rotate(0) translate(0);
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
+    -webkit-transform: rotate(0) translate(0);
+    -moz-transform: rotate(0) translate(0);
+    -ms-transform: rotate(0) translate(0);
+    -o-transform: rotate(0) translate(0);
+    -webkit-transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
+    -moz-transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
+    -ms-transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
+    -o-transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
+}
+
+.asideBar {
+    position: fixed;
+    bottom: 50%;
+    transform: translateY(50%);
+    right: 0;
+    margin-right: 1rem;
+    max-height: 70%;
+    max-width: 200px;
+    padding: 1rem;
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+
 @media (max-width: 1110px) {
-    .sectionItem {
+    .sections {
+        display: none;
+    }
+
+    .burguerMenu {
+        display: flex;
+    }
+}
+
+@media (max-width: 590px) {
+    .links {
         display: none;
     }
 }

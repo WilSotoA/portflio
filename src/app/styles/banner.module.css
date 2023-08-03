@@ -1,6 +1,6 @@
 .main {
     margin-top: 1vh;
-    height: 85%;
+    min-height: 85%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
@@ -14,6 +14,7 @@
     min-width: 100%;
     justify-items: center;
 }
+
 .containerInfo div {
     width: 70%;
     align-self: flex-end;
@@ -54,6 +55,8 @@
 .image {
     width: 80%;
     height: 80%;
+    animation: image 2s infinite ease alternate;
+    -webkit-animation: image 2s infinite ease alternate;
 }
 
 .cursor {
@@ -63,6 +66,16 @@
     text-align: center;
     background-color: rgb(224, 241, 255);
     animation: blink 0.8s infinite;
+}
+
+@keyframes image {
+    0% {
+        transform: translateY(-20px);
+        -webkit-transform: translateY(-20px);
+        -moz-transform: translateY(-20px);
+        -ms-transform: translateY(-20px);
+        -o-transform: translateY(-20px);
+}
 }
 
 @keyframes blink {
@@ -78,8 +91,20 @@
         opacity: 0;
     }
 }
+
 @media (max-width: 997px) {
-    .bannerHeader, .bannerInfo {
+
+    .bannerHeader,
+    .bannerInfo {
         font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .main {
+        gap: 0;
+    }
+    .containerImage {
+        justify-content: center;
     }
 }

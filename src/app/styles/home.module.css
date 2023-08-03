@@ -2,3 +2,8 @@
     height: 100vh;
     overflow: hidden;
 }
+@media (max-width: 768px) {
+    .main {
+        height: max-content;
+    }
+}
