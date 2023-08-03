@@ -32,7 +32,7 @@ function Banner (): JSX.Element {
       <section className={styles.containerInfo}>
         <div>
           <article className={styles.bannerHeader}>
-            <p>Hey, ¿que tal? 👋</p>
+            <p>Hey, ¿que tal? <span>👋</span></p>
           </article>
         </div>
         <article className={styles.bannerInfo}>
@@ -40,7 +40,6 @@ function Banner (): JSX.Element {
             {parse(text)}
             <span className={styles.cursor}></span>
           </p>
-          <div>&nbsp;</div>
         </article>
       </section>
       <section className={styles.containerImage}>
