@@ -132,3 +132,9 @@
 .scrolled .icons:hover path {
     fill: var(--primary-color);
 }
+
+@media (max-width: 1110px) {
+    .sectionItem {
+        display: none;
+    }
+}

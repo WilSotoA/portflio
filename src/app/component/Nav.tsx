@@ -137,7 +137,7 @@ function Nav (): JSX.Element {
             </g>
           </svg>
         </a>
-        <a href="" target="__blank" className={styles.icons}>
+        <a href="CV_Wilmer_Andres_Soto_Almeida.pdf" target="__blank" className={styles.icons}>
           <svg
             width="56"
             height="51"
