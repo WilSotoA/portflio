@@ -98,6 +98,9 @@
     .bannerInfo {
         font-size: 1.5rem;
     }
+    .bannerInfo {
+        min-height: 320px;
+    }
 }
 
 @media (max-width: 640px) {
@@ -106,5 +109,20 @@
     }
     .containerImage {
         justify-content: center;
+    }
+}
+@media (min-width:600px) and (max-width: 755px) {
+    .bannerInfo {
+        min-height: 390px;
+    }
+}
+@media (min-width:519px) and (max-width:599px) {
+    .bannerInfo {
+        min-height: 200px;
+    }
+}
+@media (max-width: 525px) {
+    .bannerInfo {
+        min-height: 260px;
     }
 }

@@ -46,11 +46,12 @@ function Nav (): JSX.Element {
       <Links />
       <BurguerMenu burguerClass={burguerClass} updateMenu={updateMenu} />
       {menuClass === 'disabled' || (
-        <AsideBar
-          menuClass={menuClass}
-          onUpdateLink={onUpdateLink}
-          activeLink={activeLink}
-        />
+        <AsideBar onUpdateLink={onUpdateLink} activeLink={activeLink} />
+      )}
+      {menuClass === 'disabled' || (
+        <footer className={styles.linkFooter}>
+          <Links />
+        </footer>
       )}
     </nav>
   )

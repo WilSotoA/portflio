@@ -70,7 +70,7 @@
 }
 
 
-.scrolled .sectionItem::before {
+.scrolled .sectionItem::before, .asideBar .sectionItem::before {
     background-color: var(--primary-color);
 }
 
@@ -156,6 +156,10 @@
     -o-border-radius: 0.5rem;
 }
 
+.scrolled .burguerItem {
+    background-color: var(--primary-color);
+}
+
 .burguerItem.clicked:nth-child(1) {
     transform: rotate(45deg) translate(0.75em, 1.15em);
     transition: ease-out 0.5s;
@@ -218,9 +222,29 @@
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
+    align-content: center;
+    opacity: 0.8;
     gap: 1rem;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
 }
 
+.linkFooter {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: var(--primary-color);
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid var(--tertiary-color);
+    border-radius: 2rem;
+}
+.linkFooter .links {
+    display: flex;
+}
 
 @media (max-width: 1110px) {
     .sections {

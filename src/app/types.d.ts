@@ -3,6 +3,4 @@ export interface SectionsProps {
   activeLink: string
 }
 
-export interface AsideBarProps extends SectionsProps {
-  menuClass: string
-}
+export interface AsideBarProps extends SectionsProps {}

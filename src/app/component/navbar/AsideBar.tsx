@@ -6,13 +6,9 @@ import work from '../../assets/svg/work.svg'
 import contact from '../../assets/svg/contact.svg'
 import { type AsideBarProps } from '@/app/types'
 
-function AsideBar ({
-  menuClass,
-  activeLink,
-  onUpdateLink
-}: AsideBarProps): JSX.Element {
+function AsideBar ({ activeLink, onUpdateLink }: AsideBarProps): JSX.Element {
   return (
-    <aside className={`${styles.asideBar} ${styles[menuClass]}`}>
+    <aside className={`${styles.asideBar}`}>
       <a
         href="#home"
         className={`${styles.sectionItem} ${
