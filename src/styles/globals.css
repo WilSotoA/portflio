@@ -9,9 +9,11 @@
 }
 
 :root {
-  --primary-color: #1d1d20;
-  --secondary-color: #CD2044;
-  --tertiary-color: #D9D9D9;
+  --primary-color: rgb(29, 29, 32);
+  --secondary-color: rgb(205, 32, 68);
+  --tertiary-color: rgb(217, 217, 217);
+  --cuartiary-color: rgb(229, 186, 34);
+  --quintiary-color: rgb(85, 229, 34);
   --font-main: "Tw Cen MT", __Inter_20951f, __Inter_Fallback_20951f !important;
   --font-secondary: "VCR OSD Mono", __Inter_20951f, __Inter_Fallback_20951f !important;
 }

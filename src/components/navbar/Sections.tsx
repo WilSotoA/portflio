@@ -15,7 +15,7 @@ function Sections ({ onUpdateLink, activeLink }: SectionsProps): JSX.Element {
         }}
       >
         <HomeIcon />
-        <span>Home</span>
+        <span>Inicio</span>
       </a>
       <a
         href="#about"
@@ -27,7 +27,7 @@ function Sections ({ onUpdateLink, activeLink }: SectionsProps): JSX.Element {
         }}
       >
         <AboutIcon />
-        <span>Sobre Mi</span>
+        <span>Sobre Mí</span>
       </a>
       <a
         href="#work"

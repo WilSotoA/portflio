@@ -123,13 +123,13 @@
     }
 }
 
-@media (min-width:600px) and (max-width: 755px) {
+@media (min-width:609px) and (max-width: 755px) {
     .bannerInfo {
         min-height: 390px;
     }
 }
 
-@media (min-width:519px) and (max-width:599px) {
+@media (min-width:519px) and (max-width:608px) {
     .bannerInfo {
         min-height: 200px;
     }
