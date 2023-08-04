@@ -30,7 +30,7 @@ function Sections ({ onUpdateLink, activeLink }: SectionsProps): JSX.Element {
         <span>Sobre Mí</span>
       </a>
       <a
-        href="#work"
+        href="#projects"
         className={`${styles.sectionItem} ${
           activeLink === 'Work' ? styles.activeLink : ''
         }`}
@@ -39,7 +39,7 @@ function Sections ({ onUpdateLink, activeLink }: SectionsProps): JSX.Element {
         }}
       >
         <WorkIcon />
-        <span>Projectos</span>
+        <span>Proyectos</span>
       </a>
       <a
         href="#contact"

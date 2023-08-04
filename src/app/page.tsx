@@ -1,3 +1,4 @@
+import Projects from '@/components/Projects'
 import About from '../components/About'
 import Banner from '../components/Banner'
 import MouseFollower from '../components/MouseFollower'
@@ -13,6 +14,7 @@ function Home (): JSX.Element {
       <Banner />
       </main>
       <About />
+      <Projects />
     </>
   )
 }

@@ -28,7 +28,7 @@ function AsideBar ({ activeLink, onUpdateLink }: AsideBarProps): JSX.Element {
         <AboutIcon />
       </a>
       <a
-        href="#work"
+        href="#projects"
         className={`${styles.sectionItem} ${
           activeLink === 'Work' ? styles.activeLink : ''
         }`}
