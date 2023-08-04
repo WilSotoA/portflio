@@ -1,14 +1,10 @@
 import styles from '../../styles/nav.module.css'
-import Image from 'next/image'
-import home from '../../assets/svg/Home.svg'
-import about from '../../assets/svg/about.svg'
-import work from '../../assets/svg/work.svg'
-import contact from '../../assets/svg/contact.svg'
-import { type SectionsProps } from '@/app/types'
+import { type AsideBarProps } from '@/app/types'
+import { AboutIcon, ContactIcon, HomeIcon, WorkIcon } from '../Icons'
 
-function Sections ({ onUpdateLink, activeLink }: SectionsProps): JSX.Element {
+function AsideBar ({ activeLink, onUpdateLink }: AsideBarProps): JSX.Element {
   return (
-    <ul className={styles.sections}>
+    <aside className={`${styles.asideBar}`}>
       <a
         href="#home"
         className={`${styles.sectionItem} ${
@@ -18,8 +14,7 @@ function Sections ({ onUpdateLink, activeLink }: SectionsProps): JSX.Element {
           onUpdateLink('Home')
         }}
       >
-        <Image src={home} alt="Icon Home" />
-        <span>Home</span>
+        <HomeIcon />
       </a>
       <a
         href="#about"
@@ -30,8 +25,7 @@ function Sections ({ onUpdateLink, activeLink }: SectionsProps): JSX.Element {
           onUpdateLink('About')
         }}
       >
-        <Image src={about} alt="Icon About" />
-        <span>Sobre Mi</span>
+        <AboutIcon />
       </a>
       <a
         href="#work"
@@ -42,8 +36,7 @@ function Sections ({ onUpdateLink, activeLink }: SectionsProps): JSX.Element {
           onUpdateLink('Work')
         }}
       >
-        <Image src={work} alt="Icon Work" />
-        <span>Projectos</span>
+        <WorkIcon />
       </a>
       <a
         href="#contact"
@@ -54,11 +47,10 @@ function Sections ({ onUpdateLink, activeLink }: SectionsProps): JSX.Element {
           onUpdateLink('Contact')
         }}
       >
-        <Image src={contact} alt="Icon Contact" />
-        <span>Contacto</span>
+        <ContactIcon />
       </a>
-    </ul>
+    </aside>
   )
 }
 
-export default Sections
+export default AsideBar
