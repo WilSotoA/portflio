@@ -1,3 +1,4 @@
+import About from './component/About'
 import Banner from './component/Banner'
 import MouseFollower from './component/MouseFollower'
 import Nav from './component/Nav'
@@ -11,9 +12,7 @@ function Home (): JSX.Element {
       <Nav />
       <Banner />
       </main>
-      <div id='about'>
-        About
-      </div>
+      <About />
     </>
   )
 }

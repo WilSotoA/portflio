@@ -1,0 +1,13 @@
+.about {
+    min-height: 100vh;
+    margin-top: 8rem;
+}
+
+.title {
+    padding-top: 2rem;
+    text-align: center;
+    font-family: var(--font-secondary);
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 400;
+}

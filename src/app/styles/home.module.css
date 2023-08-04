@@ -1,6 +1,7 @@
 .main {
     height: 100vh;
     overflow: hidden;
+    box-shadow: 0rem 0rem 0.5rem 0.5rem var(--tertiary-color);
 }
 @media (max-width: 768px) {
     .main {
