@@ -1,13 +1,13 @@
 .projects {
     min-height: 100vh;
-    margin-top: 8rem;
+    margin-top: var(--margin-top-section);
 }
 
 .title {
     padding-top: 2rem;
     text-align: center;
     font-family: var(--font-secondary);
-    font-size: 4rem;
+    font-size: var(--font-size-title);
     font-style: normal;
     font-weight: 400;
 }
@@ -74,6 +74,7 @@
 @media (max-width: 680px) {
     .containerProjects {
         grid-template-columns: 1fr;
+        grid-template-rows: auto;
     }
     .containerProjects picture {
         grid-area: auto !important;

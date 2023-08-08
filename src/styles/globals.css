@@ -16,6 +16,8 @@
   --quintiary-color: rgb(85, 229, 34);
   --font-main: "Tw Cen MT", __Inter_20951f, __Inter_Fallback_20951f !important;
   --font-secondary: "VCR OSD Mono", __Inter_20951f, __Inter_Fallback_20951f !important;
+  --font-size-title: 4rem;
+  --margin-top-section: 8rem;
 }
 
 * {
@@ -55,4 +57,11 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
   background-color: var(--tertiary-color);
+}
+
+@media (max-width: 620px) {
+  :root {
+    --font-size-title: 2rem;
+    --margin-top-section: 4rem;
+  }
 }

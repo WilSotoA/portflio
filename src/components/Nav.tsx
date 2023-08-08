@@ -8,7 +8,7 @@ import BurguerMenu from './navbar/BurguerMenu'
 import AsideBar from './navbar/AsideBar'
 
 function Nav (): JSX.Element {
-  const [activeLink, setActiveLink] = useState('Home')
+  const [activeLink, setActiveLink] = useState('home')
   const [scrolled, setScrolled] = useState(false)
   const [burguerClass, setBurguerClass] = useState('unclicked')
   const [isMenuClicked, setIsMenuClicked] = useState(false)
@@ -28,9 +28,22 @@ function Nav (): JSX.Element {
   useEffect(() => {
     const onScroll = (): void => {
       window.scrollY > 50 ? setScrolled(true) : setScrolled(false)
+
+      // Find the active section based on scroll position
+      const sections = document.querySelectorAll('section[id]')
+      sections.forEach((section) => {
+        const rect = section.getBoundingClientRect()
+        if (
+          rect.top <= window.innerHeight / 2 &&
+          rect.bottom >= window.innerHeight / 2
+        ) {
+          setActiveLink(section.id)
+        }
+      })
     }
+
     window.addEventListener('scroll', onScroll)
-    return (): void => {
+    return () => {
       window.removeEventListener('scroll', onScroll)
     }
   }, [])

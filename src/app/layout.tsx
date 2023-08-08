@@ -4,9 +4,7 @@ import { Inter } from 'next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })
 
-const url = (process.env.VERCEL_URL != null) ? 'https://wilsotoa.vercel.app/portflio.png' : 'http://localhost:3000/portflio.png'
-
-console.log(url)
+const url = (process.env.VERCEL_URL != null) ? 'https://wilsotoa.vercel.app/' : 'http://localhost:3000/'
 
 export const metadata: Metadata = {
   title: 'Wilmer S. 😎 | Full Stack Developer 🇨🇴',
@@ -27,7 +25,7 @@ export const metadata: Metadata = {
     siteName: 'Portafolio Wilmer S Full Stack Developer',
     images: [
       {
-        url,
+        url: `${url}portflio.png`,
         width: 800,
         height: 600,
         alt: 'Portafolio Wilmer S Full Stack Developer'
@@ -35,7 +33,7 @@ export const metadata: Metadata = {
     ]
   },
   manifest: '/site.webmanifest',
-  metadataBase: null
+  metadataBase: new URL(url)
 }
 
 export default function RootLayout ({

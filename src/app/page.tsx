@@ -10,10 +10,10 @@ function Home (): JSX.Element {
   return (
     <>
       <MouseFollower />
-      <main className={styles.main} id='home'>
+      <section className={styles.main} id='home'>
       <Nav />
       <Banner />
-      </main>
+      </section>
       <About />
       <Projects />
       <Footer/>

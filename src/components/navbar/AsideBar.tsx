@@ -8,10 +8,10 @@ function AsideBar ({ activeLink, onUpdateLink }: AsideBarProps): JSX.Element {
       <a
         href="#home"
         className={`${styles.sectionItem} ${
-          activeLink === 'Home' ? styles.activeLink : ''
+          activeLink === 'home' ? styles.activeLink : ''
         }`}
         onClick={() => {
-          onUpdateLink('Home')
+          onUpdateLink('home')
         }}
       >
         <HomeIcon />
@@ -19,10 +19,10 @@ function AsideBar ({ activeLink, onUpdateLink }: AsideBarProps): JSX.Element {
       <a
         href="#about"
         className={`${styles.sectionItem} ${
-          activeLink === 'About' ? styles.activeLink : ''
+          activeLink === 'about' ? styles.activeLink : ''
         }`}
         onClick={() => {
-          onUpdateLink('About')
+          onUpdateLink('about')
         }}
       >
         <AboutIcon />
@@ -30,10 +30,10 @@ function AsideBar ({ activeLink, onUpdateLink }: AsideBarProps): JSX.Element {
       <a
         href="#projects"
         className={`${styles.sectionItem} ${
-          activeLink === 'Work' ? styles.activeLink : ''
+          activeLink === 'projects' ? styles.activeLink : ''
         }`}
         onClick={() => {
-          onUpdateLink('Work')
+          onUpdateLink('projects')
         }}
       >
         <WorkIcon />
@@ -41,10 +41,10 @@ function AsideBar ({ activeLink, onUpdateLink }: AsideBarProps): JSX.Element {
       <a
         href="#contact"
         className={`${styles.sectionItem} ${
-          activeLink === 'Contact' ? styles.activeLink : ''
+          activeLink === 'contact' ? styles.activeLink : ''
         }`}
         onClick={() => {
-          onUpdateLink('Contact')
+          onUpdateLink('contact')
         }}
       >
         <ContactIcon />

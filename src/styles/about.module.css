@@ -1,13 +1,13 @@
 .about {
     min-height: 100vh;
-    margin-top: 8rem;
+    margin-top: var(--margin-top-section);
 }
 
 .title {
     padding-top: 2rem;
     text-align: center;
     font-family: var(--font-secondary);
-    font-size: 4rem;
+    font-size: var(--font-size-title);
     font-style: normal;
     font-weight: 400;
 }
@@ -18,6 +18,14 @@
     gap: 1.5rem;
     justify-content: flex-end
 }
+
+.skillsTitle {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.8rem;
+}
+
 .window li {
     width: 1.5rem;
     height: 1.5rem;
@@ -62,7 +70,7 @@
 }
 
 .skills {
-    margin-top: 8rem;
+    margin-top: var(--margin-top-section);
 }
 
 .skillsImages {
@@ -76,4 +84,11 @@
 
 .skillsImages img{
     max-width: 300px;
+}
+
+@media (max-width: 620px) {
+    .skillsTitle {
+        left: 20% !important;
+        font-size: 1.2rem;
+}
 }
