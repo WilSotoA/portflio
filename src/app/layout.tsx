@@ -4,7 +4,7 @@ import { Inter } from 'next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })
 
-const url = (process.env.VERCEL_URL != null) ? `${process.env.VERCEL_URL}/portflio.png` : 'http://localhost:3000/portflio.png'
+const url = (process.env.VERCEL_URL != null) ? 'https://wilsotoa.vercel.app/portflio.png' : 'http://localhost:3000/portflio.png'
 
 console.log(url)
 
