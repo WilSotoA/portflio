@@ -4,7 +4,9 @@ import { Inter } from 'next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })
 
-const url = process.env?.VERCEL_URL || 'http://localhost:3000'
+const url = process.env?.VERCEL_URL ?? 'http://localhost:3000'
+
+console.log(url)
 
 export const metadata: Metadata = {
   title: 'Wilmer S. 😎 | Full Stack Developer 🇨🇴',
