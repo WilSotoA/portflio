@@ -4,16 +4,7 @@ import { Inter } from 'next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })
 
-const url = process.env?.VERCEL_URL ?? 'http://localhost:3000'
-
-let metadataBaseUrl
-try {
-  metadataBaseUrl = new URL(url)
-} catch (error) {
-  console.error('Invalid URL:', error)
-  // En caso de URL no válida, proporciona una URL predeterminada válida
-  metadataBaseUrl = new URL('http://localhost:3000')
-}
+const url = process.env.VERCEL_URL ?? 'http://localhost:3000'
 
 console.log(url)
 
@@ -44,7 +35,7 @@ export const metadata: Metadata = {
     ]
   },
   manifest: '/site.webmanifest',
-  metadataBase: metadataBaseUrl
+  metadataBase: null
 }
 
 export default function RootLayout ({
