@@ -6,17 +6,32 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Wilmer S. 😎 | Full Stack Developer 🇨🇴',
-  description: 'Creative developer living in Colombia, focused in Back-end, with skills in React, Redux, JavaScript, PHP, NodeJS, and others.',
+  description: 'Creative developer living in Colombia, focused on Back-end, with skills in React, Redux, JavaScript, PHP, NodeJS, and more.',
+  keywords: ['Next.js', 'React', 'JavaScript', 'TypeScript', 'Developer', 'Portflio', 'Wilmer', 'Wilmer S.', 'WilSotoA', 'Desarrollador'],
+  authors: [{ name: 'WilSotoA' }],
+  colorScheme: 'dark',
+  creator: 'WilSotoA',
+  publisher: 'WilSotoA',
   icons: {
     icon: ['/favicon.ico?v=4'],
     apple: ['/apple-touch-icon.png?v=4'],
     shortcut: ['/apple-touch-icon.png']
   },
   openGraph: {
-    title: 'Wilmer S. Portflio | Full Stack Developer',
-    description: 'Creative developer living in Colombia, focused in Back-end, with skills in React, Redux, JavaScript, PHP, NodeJS, and others.'
+    title: 'Wilmer S. Portfolio | Full Stack Developer',
+    description: 'Creative developer living in Colombia, focused on Back-end, with skills in React, Redux, JavaScript, PHP, NodeJS, and more.',
+    siteName: 'Portafolio Wilmer S Full Stack Developer',
+    images: [
+      {
+        url: 'http://localhost:3000/portflio.png',
+        width: 800,
+        height: 600,
+        alt: 'Portafolio Wilmer S Full Stack Developer'
+      }
+    ]
   },
-  manifest: '/site.webmanifest'
+  manifest: '/site.webmanifest',
+  metadataBase: new URL('http://localhost:3000')
 }
 
 export default function RootLayout ({
