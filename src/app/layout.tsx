@@ -6,6 +6,15 @@ const inter = Inter({ subsets: ['latin'] })
 
 const url = process.env?.VERCEL_URL ?? 'http://localhost:3000'
 
+let metadataBaseUrl
+try {
+  metadataBaseUrl = new URL(url)
+} catch (error) {
+  console.error('Invalid URL:', error)
+  // En caso de URL no válida, proporciona una URL predeterminada válida
+  metadataBaseUrl = new URL('http://localhost:3000')
+}
+
 console.log(url)
 
 export const metadata: Metadata = {
@@ -35,7 +44,7 @@ export const metadata: Metadata = {
     ]
   },
   manifest: '/site.webmanifest',
-  metadataBase: new URL(url)
+  metadataBase: metadataBaseUrl
 }
 
 export default function RootLayout ({
