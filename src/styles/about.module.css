@@ -81,9 +81,37 @@
     padding: 2rem;
     gap: 2rem;
 }
+.skillsImages .imageContainer {
+    position: relative;
+    min-width: 20%;
+    flex: 1 0 auto;
+    display: flex;
+    justify-content: center;
+}
 
-.skillsImages img{
-    max-width: 300px;
+.skillsImages img {
+    cursor: pointer;
+    max-width: 100%;
+    transition: transform 0.5s ease;
+}
+
+.skillsImages .tooltip {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--primary-color);
+    color: var(--terciary-color);
+    padding: 0.5rem;
+    border-radius: 4px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+.skillsImages .imageContainer:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
 }
 
 @media (max-width: 620px) {
