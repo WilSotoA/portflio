@@ -27,26 +27,37 @@ function Nav (): JSX.Element {
 
   useEffect(() => {
     const onScroll = (): void => {
-      window.scrollY > 50 ? setScrolled(true) : setScrolled(false)
+      const newScrolled = window.scrollY > 50
+      if (newScrolled !== scrolled) {
+        setScrolled(newScrolled)
+      }
 
       // Find the active section based on scroll position
       const sections = document.querySelectorAll('section[id]')
+      let newActiveLink = activeLink
       sections.forEach((section) => {
         const rect = section.getBoundingClientRect()
         if (
           rect.top <= window.innerHeight / 2 &&
           rect.bottom >= window.innerHeight / 2
         ) {
-          setActiveLink(section.id)
+          newActiveLink = section.id
         }
       })
+
+      if (newActiveLink !== activeLink) {
+        setActiveLink(newActiveLink)
+      }
     }
 
     window.addEventListener('scroll', onScroll)
+
+    onScroll()
+
     return () => {
       window.removeEventListener('scroll', onScroll)
     }
-  }, [])
+  }, [scrolled, activeLink])
 
   const onUpdateLink = (value: string): void => {
     setActiveLink(value)
