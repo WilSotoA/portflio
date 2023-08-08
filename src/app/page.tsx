@@ -4,6 +4,7 @@ import Banner from '../components/Banner'
 import MouseFollower from '../components/MouseFollower'
 import Nav from '../components/Nav'
 import styles from '../styles/home.module.css'
+import Footer from '@/components/Footer'
 
 function Home (): JSX.Element {
   return (
@@ -15,6 +16,7 @@ function Home (): JSX.Element {
       </main>
       <About />
       <Projects />
+      <Footer/>
     </>
   )
 }
