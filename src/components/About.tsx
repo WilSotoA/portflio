@@ -1,4 +1,5 @@
 import styles from '../styles/about.module.css'
+import Skills from './Skills'
 
 function About (): JSX.Element {
   return (
@@ -26,8 +27,7 @@ function About (): JSX.Element {
           relacionadas.
         </p>
       </article>
-      <article className={styles.information}>
-      </article>
+      <Skills />
     </section>
   )
 }
