@@ -4,6 +4,8 @@ import { Inter } from 'next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })
 
+const url = process.env?.VERCEL_URL || 'http://localhost:3000'
+
 export const metadata: Metadata = {
   title: 'Wilmer S. 😎 | Full Stack Developer 🇨🇴',
   description: 'Creative developer living in Colombia, focused on Back-end, with skills in React, Redux, JavaScript, PHP, NodeJS, and more.',
@@ -23,7 +25,7 @@ export const metadata: Metadata = {
     siteName: 'Portafolio Wilmer S Full Stack Developer',
     images: [
       {
-        url: 'http://localhost:3000/portflio.png',
+        url,
         width: 800,
         height: 600,
         alt: 'Portafolio Wilmer S Full Stack Developer'
@@ -31,7 +33,7 @@ export const metadata: Metadata = {
     ]
   },
   manifest: '/site.webmanifest',
-  metadataBase: new URL('http://localhost:3000')
+  metadataBase: new URL(url)
 }
 
 export default function RootLayout ({
