@@ -1,0 +1,130 @@
+.contact {
+    min-height: 100vh;
+    margin-top: var(--margin-top-section);
+}
+
+.content {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(400px, 100%), 1fr));
+    gap: 2rem;
+    place-items: center;
+}
+
+.form {
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.firstInputs {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.firstInputs .containerInputs {
+    width: 45%;
+}
+
+.containerInputs {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: calc(var(--font-size-title) / 2.5)
+}
+
+.containerInputs input {
+    padding: 0.5rem;
+    border: 5px solid var(--secondary-color);
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+    outline: 0;
+    font-family: var(--font-primary);
+}
+
+
+.message {
+    font-family: var(--font-primary);
+    resize: none;
+    padding: 0.2rem;
+    min-height: 7rem;
+    outline: 0;
+    border: 5px solid var(--secondary-color);
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+}
+
+.containerInputs input,
+.message {
+    transition: box-shadow .1s linear;
+    -webkit-transition: box-shadow .1s linear;
+    -moz-transition: box-shadow .1s linear;
+    -ms-transition: box-shadow .1s linear;
+    -o-transition: box-shadow .1s linear;
+}
+
+
+.containerInputs input:focus,
+.message:focus {
+    box-shadow: 0rem 0rem 0.6rem 0rem  var(--tertiary-color);
+}
+
+.form button {
+    cursor: pointer;
+    color: var(--tertiary-color);
+    background-color: var(--secondary-color);
+    margin: 0 auto;
+    width: 70%;
+    padding: 0.2rem;
+    border: 5px solid var(--secondary-color);
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+    outline: 0;
+    transition: all .5s cubic-bezier(.175, .885, .32, 1.275);
+    -webkit-transition: all .5s cubic-bezier(.175, .885, .32, 1.275);
+    -moz-transition: all .5s cubic-bezier(.175, .885, .32, 1.275);
+    -ms-transition: all .5s cubic-bezier(.175, .885, .32, 1.275);
+    -o-transition: transform .2s cubic-bezier(.175, .885, .32, 1.275);
+    
+}
+
+.form button:hover {
+    transform: translate(1px, -1px);
+    -webkit-transform: translate(1px, -1px);
+    -moz-transform: translate(1px, -1px);
+    -ms-transform: translate(1px, -1px);
+    -o-transform: translate(1px, -1px);
+}
+
+.containerImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerImage img {
+    width: 100%;
+}
+
+.title {
+    padding-top: 2rem;
+    text-align: center;
+    font-family: var(--font-secondary);
+    font-size: var(--font-size-title);
+    font-style: normal;
+    font-weight: 400;
+}

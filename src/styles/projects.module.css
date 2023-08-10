@@ -15,8 +15,7 @@
 .containerProjects {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(4, 1fr);
-    max-width: 75%;
+    max-width: 80%;
     gap: 0.6rem;
     width: 100%;
     margin: 0 auto;
@@ -149,13 +148,13 @@
 }
 
 .content h3 {
-    font-size: calc(var(--font-size-title) / 2.3);
+    font-size: calc(var(--font-size-title) / 2);
     color: var(--secondary-color);
     font-weight: 700;
 }
 
 .content p {
-    font-size: calc(var(--font-size-title) / 3);
+    font-size: calc(var(--font-size-title) / 2.5);
     color: var(--tertiary-color);
     margin-bottom: 0.2rem;
 }
@@ -168,7 +167,7 @@
 
 .skills span {
     background-color: var(--primary-color);
-    font-size: calc(var(--font-size-title) / 4);
+    font-size: calc(var(--font-size-title) / 3.5);
     padding: 0.5rem;
     border-radius: 2rem;
     -webkit-border-radius: 2rem;
@@ -180,6 +179,7 @@
 .image {
     width: 100%;
     height: 100%;
+    object-fit: cover;
     border-radius: 1rem;
     -webkit-border-radius: 1rem;
     -moz-border-radius: 1rem;
@@ -201,10 +201,6 @@
 
 .mansoryItem:nth-child(4) {
     grid-area: 2 / 2 / 4 / 3;
-}
-
-.mansoryItem:nth-child(5) {
-    grid-area: 4 / 1 / 6 / 2;
 }
 
 .mansoryItem:hover {

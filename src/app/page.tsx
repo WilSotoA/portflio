@@ -5,18 +5,20 @@ import MouseFollower from '../components/MouseFollower'
 import Nav from '../components/Nav'
 import styles from '../styles/home.module.css'
 import Footer from '@/components/Footer'
+import Contact from '@/components/Contact'
 
 function Home (): JSX.Element {
   return (
     <>
       <MouseFollower />
-      <section className={styles.main} id='home'>
-      <Nav />
-      <Banner />
+      <section className={styles.main} id="home">
+        <Nav />
+        <Banner />
       </section>
       <About />
       <Projects />
-      <Footer/>
+      <Contact />
+      <Footer />
     </>
   )
 }

@@ -9,6 +9,7 @@
 }
 
 :root {
+  --background-color: rgb(38, 50, 56);
   --primary-color: rgb(29, 29, 32);
   --secondary-color: rgb(205, 32, 68);
   --tertiary-color: rgb(217, 217, 217);
