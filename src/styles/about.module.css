@@ -65,7 +65,7 @@
     gap: 2rem;
 }
 .containerText p {
-    font-size: 1.5rem;
+    font-size: calc(var(--font-size-title) / 2.5);
     line-height: 2rem;
 }
 

@@ -2,6 +2,7 @@ import styles from '../styles/projects.module.css'
 import Image from 'next/image'
 import btender from '../assets/btender.gif'
 import rickandmorty from '../assets/rickandmorty.gif'
+import pokemon from '../assets/pokemon.gif'
 import gelvez from '../assets/gelvez.png'
 import dulcepan from '../assets/dulcepan.gif'
 import { LinkIcon, GithubIcon } from './Icons'
@@ -35,11 +36,19 @@ function Projects (): JSX.Element {
           </div>
         </div>
         <div className={styles.mansoryItem}>
-        <div className={styles.links}>
-            <a href="https://rick-and-morty-wilsotoa.vercel.app/" target="_blank" rel="noreferrer">
+          <div className={styles.links}>
+            <a
+              href="https://rick-and-morty-wilsotoa.vercel.app/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <LinkIcon />
             </a>
-            <a href="https://github.com/WilSotoA/rick-and-morty" target="_blank" rel="noreferrer">
+            <a
+              href="https://github.com/WilSotoA/rick-and-morty"
+              target="_blank"
+              rel="noreferrer"
+            >
               <GithubIcon />
             </a>
           </div>
@@ -63,25 +72,48 @@ function Projects (): JSX.Element {
           </div>
         </div>
         <div className={styles.mansoryItem}>
-          <Image className={styles.image} src={gelvez} alt="Proyecto Gelvez" />
+          <div className={styles.links}>
+            <a
+              href="https://pokemon-wilsotoa.vercel.app/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <LinkIcon />
+            </a>
+            <a
+              href="https://github.com/WilSotoA/pokemon"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <GithubIcon />
+            </a>
+          </div>
+          <Image
+            className={styles.image}
+            src={pokemon}
+            alt="Proyecto Pokemon"
+          />
           <div className={styles.content}>
-            <h3>Gelvez intranet</h3>
-            <p>Login y registro Gelvez intranet</p>
+            <h3>Pokemon</h3>
+            <p>Proyecto individual en el bootcamp SoyHenry</p>
             <p className={styles.skills}>
               <span>HTML &amp; CSS</span>
               <span>JavaScript</span>
-              <span>PHP</span>
-              <span>Laravel</span>
+              <span>Node.js</span>
+              <span>React</span>
+              <span>Express.js</span>
+              <span>Sequelize</span>
               <span>PostgreSQL</span>
             </p>
           </div>
         </div>
         <div className={styles.mansoryItem}>
-        <div className={styles.links}>
-            {/* <a href="https://rick-and-morty-wilsotoa.vercel.app/" target="_blank" rel="noreferrer">
-              <LinkIcon />
-            </a> */}
-            <a href="https://github.com/WilSotoA/Panaderia" target="_blank" rel="noreferrer">
+          <div className={styles.links}>
+            <a
+              href="https://github.com/WilSotoA/Panaderia"
+              target="_blank"
+              rel="noreferrer"
+            >
               <GithubIcon />
             </a>
           </div>
@@ -99,6 +131,20 @@ function Projects (): JSX.Element {
               <span>PHP</span>
               <span>jQuery</span>
               <span>MySQL</span>
+            </p>
+          </div>
+        </div>
+        <div className={styles.mansoryItem}>
+          <Image className={styles.image} src={gelvez} alt="Proyecto Gelvez" />
+          <div className={styles.content}>
+            <h3>Gelvez intranet</h3>
+            <p>Login y registro Gelvez intranet</p>
+            <p className={styles.skills}>
+              <span>HTML &amp; CSS</span>
+              <span>JavaScript</span>
+              <span>PHP</span>
+              <span>Laravel</span>
+              <span>PostgreSQL</span>
             </p>
           </div>
         </div>
