@@ -86,8 +86,8 @@
     background-color: var(--secondary-color);
     margin: 0 auto;
     width: 70%;
-    padding: 0.2rem;
-    border: 5px solid var(--secondary-color);
+    padding: 0.5rem;
+    border: none;
     border-radius: 0.5rem;
     -webkit-border-radius: 0.5rem;
     -moz-border-radius: 0.5rem;
@@ -98,16 +98,12 @@
     -webkit-transition: all .5s cubic-bezier(.175, .885, .32, 1.275);
     -moz-transition: all .5s cubic-bezier(.175, .885, .32, 1.275);
     -ms-transition: all .5s cubic-bezier(.175, .885, .32, 1.275);
-    -o-transition: transform .2s cubic-bezier(.175, .885, .32, 1.275);
-    
+    -o-transition: all .5s cubic-bezier(.175, .885, .32, 1.275);
 }
 
 .form button:hover {
-    transform: translate(1px, -1px);
-    -webkit-transform: translate(1px, -1px);
-    -moz-transform: translate(1px, -1px);
-    -ms-transform: translate(1px, -1px);
-    -o-transform: translate(1px, -1px);
+    box-shadow: 0 0.5em 0.5em -0.4em var(--secondary-color);
+    transform: translateY(-0.25em);
 }
 
 .containerImage {
@@ -127,4 +123,28 @@
     font-size: var(--font-size-title);
     font-style: normal;
     font-weight: 400;
+}
+
+.sucess {
+    opacity: 0;
+    text-align: center;
+    color: var(--quintiary-color);
+    transition: opacity .2s linear;
+    -webkit-transition: opacity .2s linear;
+    -moz-transition: opacity .2s linear;
+    -ms-transition: opacity .2s linear;
+    -o-transition: opacity .2s linear;
+}
+.error {
+    opacity: 0;
+    text-align: center;
+    color: var(--secondary-color);
+    transition: opacity .2s linear;
+    -webkit-transition: opacity .2s linear;
+    -moz-transition: opacity .2s linear;
+    -ms-transition: opacity .2s linear;
+    -o-transition: opacity .2s linear;
+}
+.active {
+    opacity: 1;
 }
