@@ -3,7 +3,7 @@ import Image from 'next/image'
 import logo from '../../assets/svg/Logo Wil.svg'
 import logoBlack from '../../assets/svg/Logo Wil Black.svg'
 
-function Logo ({ scrolled }: { scrolled: boolean }): JSX.Element {
+function Logo ({ scrolled }: { scrolled: boolean }) {
   return (
     <div className={styles.containerLogo}>
       {scrolled

@@ -2,7 +2,7 @@ import Image from 'next/image'
 import email from '../assets/svg/Emails-bro.svg'
 import styles from '../styles/contact.module.css'
 
-export default function Contact (): JSX.Element {
+export default function Contact () {
   return (
     <section id="contact" className={styles.contact}>
       <h1 className={styles.title}>Contacto</h1>

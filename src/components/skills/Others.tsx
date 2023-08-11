@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import styles from '../../styles/about.module.css'
 
-function Others (): JSX.Element {
+function Others () {
   return (
     <div className={styles.containerText}>
       <h2 className={styles.skillsTitle}>Otros</h2>

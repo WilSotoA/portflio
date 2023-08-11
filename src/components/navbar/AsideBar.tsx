@@ -2,7 +2,7 @@ import styles from '../../styles/nav.module.css'
 import { type AsideBarProps } from '@/app/types'
 import { AboutIcon, ContactIcon, HomeIcon, WorkIcon } from '../Icons'
 
-function AsideBar ({ activeLink, onUpdateLink }: AsideBarProps): JSX.Element {
+function AsideBar ({ activeLink, onUpdateLink }: AsideBarProps) {
   return (
     <aside className={`${styles.asideBar}`}>
       <a

@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react'
 import styles from '../styles/mouse.module.css'
 
-const MouseFollower = (): JSX.Element => {
+const MouseFollower = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 })
 
   useEffect(() => {

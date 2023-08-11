@@ -1,7 +1,7 @@
 import styles from '../styles/about.module.css'
 import Skills from './Skills'
 
-function About (): JSX.Element {
+function About () {
   return (
     <section className={styles.about} id="about">
       <h1 className={styles.title}>Sobre Mí</h1>

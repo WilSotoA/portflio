@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import styles from '../../styles/about.module.css'
 
-function Backend (): JSX.Element {
+function Backend () {
   return (
     <div className={styles.containerText}>
       <h2 className={styles.skillsTitle}>Back End</h2>

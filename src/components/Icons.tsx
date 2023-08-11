@@ -1,4 +1,4 @@
-export const HomeIcon = (): JSX.Element => (
+export const HomeIcon = () => (
   <svg
     width="43"
     height="41"
@@ -15,7 +15,7 @@ export const HomeIcon = (): JSX.Element => (
   </svg>
 )
 
-export const AboutIcon = (): JSX.Element => (
+export const AboutIcon = () => (
   <svg
     width="40"
     height="40"
@@ -30,7 +30,7 @@ export const AboutIcon = (): JSX.Element => (
   </svg>
 )
 
-export const WorkIcon = (): JSX.Element => (
+export const WorkIcon = () => (
   <svg
     width="47"
     height="49"
@@ -54,7 +54,7 @@ export const WorkIcon = (): JSX.Element => (
   </svg>
 )
 
-export const ContactIcon = (): JSX.Element => (
+export const ContactIcon = () => (
   <svg
     width="51"
     height="39"
@@ -70,7 +70,7 @@ export const ContactIcon = (): JSX.Element => (
   </svg>
 )
 
-export const GithubIcon = (): JSX.Element => (
+export const GithubIcon = () => (
   <svg
     width="56"
     height="51"
@@ -88,7 +88,7 @@ export const GithubIcon = (): JSX.Element => (
   </svg>
 )
 
-export const LinkedinIcon = (): JSX.Element => (
+export const LinkedinIcon = () => (
   <svg
     width="56"
     height="51"
@@ -106,7 +106,7 @@ export const LinkedinIcon = (): JSX.Element => (
   </svg>
 )
 
-export const CvIcon = (): JSX.Element => (
+export const CvIcon = () => (
   <svg
     width="56"
     height="51"
@@ -159,7 +159,7 @@ export const CvIcon = (): JSX.Element => (
   </svg>
 )
 
-export const LinkIcon = (): JSX.Element => (
+export const LinkIcon = () => (
   <svg
     width="60"
     height="60"

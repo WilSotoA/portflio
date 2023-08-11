@@ -1,7 +1,7 @@
 import styles from '../../styles/nav.module.css'
 import { CvIcon, GithubIcon, LinkedinIcon } from '../Icons'
 
-function Links (): JSX.Element {
+function Links () {
   return (
     <div className={styles.links}>
       <a

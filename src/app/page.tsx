@@ -7,7 +7,7 @@ import styles from '../styles/home.module.css'
 import Footer from '@/components/Footer'
 import Contact from '@/components/Contact'
 
-function Home (): JSX.Element {
+function Home () {
   return (
     <>
       <MouseFollower />

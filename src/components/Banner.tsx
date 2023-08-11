@@ -5,7 +5,7 @@ import styles from '../styles/banner.module.css'
 import developer from '../assets/svg/programming.svg'
 import { useEffect, useState } from 'react'
 
-function Banner (): JSX.Element {
+function Banner () {
   const [text, setText] = useState('')
   const originalText = `Mi nombre es <span>Wilmer Andres Soto Almeida</span> y soy
   un desarrollador Full Stack`

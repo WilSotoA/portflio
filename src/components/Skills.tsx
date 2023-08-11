@@ -3,7 +3,7 @@ import Backend from './skills/Backend'
 import Frontend from './skills/Frontend'
 import Others from './skills/Others'
 
-function Skills (): JSX.Element {
+function Skills () {
   return (
     <article className={styles.skills}>
       <h2 className={styles.title}>Habilidades</h2>

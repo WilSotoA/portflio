@@ -8,7 +8,7 @@ interface BurguerMenuProps {
 function BurguerMenu ({
   updateMenu,
   burguerClass
-}: BurguerMenuProps): JSX.Element {
+}: BurguerMenuProps) {
   return (
     <div className={styles.burguerMenu} onClick={updateMenu}>
       <div className={`${styles.burguerItem} ${styles[burguerClass]}`}></div>

@@ -7,7 +7,7 @@ import gelvez from '../assets/gelvez.png'
 import dulcepan from '../assets/dulcepan.gif'
 import { LinkIcon, GithubIcon } from './Icons'
 
-function Projects (): JSX.Element {
+function Projects () {
   return (
     <section id="projects" className={styles.projects}>
       <h1 className={styles.title}>Proyectos</h1>

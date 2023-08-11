@@ -7,7 +7,7 @@ import Links from './navbar/Links'
 import BurguerMenu from './navbar/BurguerMenu'
 import AsideBar from './navbar/AsideBar'
 
-function Nav (): JSX.Element {
+function Nav () {
   const [activeLink, setActiveLink] = useState('home')
   const [scrolled, setScrolled] = useState(false)
   const [burguerClass, setBurguerClass] = useState('unclicked')
