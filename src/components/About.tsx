@@ -1,4 +1,5 @@
 import styles from '../styles/about.module.css'
+import Resume from './Resume'
 import Skills from './Skills'
 
 function About () {
@@ -27,6 +28,7 @@ function About () {
           relacionadas.
         </p>
       </article>
+      <Resume />
       <Skills />
     </section>
   )

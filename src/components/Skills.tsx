@@ -6,7 +6,7 @@ import Others from './skills/Others'
 function Skills () {
   return (
     <article className={styles.skills}>
-      <h2 className={styles.title}>Habilidades</h2>
+      <h2 className={styles.subtitle}>Habilidades</h2>
       <Frontend />
       <Backend />
       <Others />
