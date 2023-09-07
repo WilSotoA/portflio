@@ -12,7 +12,7 @@ function Links () {
        <GithubIcon />
       </a>
       <a
-        href="https://www.linkedin.com/in/wilmer-soto-73b360272/"
+        href="https://www.linkedin.com/in/wilmer-soto/"
         target="__blank"
         className={styles.icons}
       >

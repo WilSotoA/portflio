@@ -4,12 +4,27 @@ import { Inter } from 'next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })
 
-const url = (process.env.VERCEL_URL != null) ? 'https://wilsotoa.vercel.app/' : 'http://localhost:3000/'
+const url =
+  process.env.VERCEL_URL != null
+    ? 'https://wilsotoa.vercel.app/'
+    : 'http://localhost:3000/'
 
 export const metadata: Metadata = {
   title: 'Wilmer S. 😎 | Full Stack Developer 🇨🇴',
-  description: 'Creative developer living in Colombia, focused on Back-end, with skills in React, Redux, JavaScript, PHP, NodeJS, and more.',
-  keywords: ['Next.js', 'React', 'JavaScript', 'TypeScript', 'Developer', 'Portflio', 'Wilmer', 'Wilmer S.', 'WilSotoA', 'Desarrollador'],
+  description:
+    'Creative developer living in Colombia, focused on Back-end, with skills in React, Redux, JavaScript, PHP, NodeJS, and more.',
+  keywords: [
+    'Next.js',
+    'React',
+    'JavaScript',
+    'TypeScript',
+    'Developer',
+    'Portflio',
+    'Wilmer',
+    'Wilmer S.',
+    'WilSotoA',
+    'Desarrollador'
+  ],
   authors: [{ name: 'WilSotoA' }],
   colorScheme: 'dark',
   creator: 'WilSotoA',
@@ -21,8 +36,23 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Wilmer S. Portfolio | Full Stack Developer',
-    description: 'Creative developer living in Colombia, focused on Back-end, with skills in React, Redux, JavaScript, PHP, NodeJS, and more.',
+    description:
+      'Creative developer living in Colombia, focused on Back-end, with skills in React, Redux, JavaScript, PHP, NodeJS, and more.',
     siteName: 'Portafolio Wilmer S Full Stack Developer',
+    images: [
+      {
+        url: `${url}portflio.png`,
+        width: 800,
+        height: 600,
+        alt: 'Portafolio Wilmer S Full Stack Developer'
+      }
+    ]
+  },
+  twitter: {
+    title: 'Wilmer S. Portfolio | Full Stack Developer',
+    description:
+      'Creative developer living in Colombia, focused on Back-end, with skills in React, Redux, JavaScript, PHP, NodeJS, and more.',
+    card: 'summary_large_image',
     images: [
       {
         url: `${url}portflio.png`,
