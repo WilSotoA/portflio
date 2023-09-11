@@ -1,3 +1,4 @@
+'use client'
 import Projects from '@/components/Projects'
 import About from '../components/About'
 import Banner from '../components/Banner'

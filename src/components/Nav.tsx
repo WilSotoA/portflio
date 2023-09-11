@@ -1,4 +1,3 @@
-'use client'
 import { useState, useEffect } from 'react'
 import styles from '../styles/nav.module.css'
 import Logo from './navbar/Logo'

@@ -109,6 +109,9 @@
 }
 
 .icons {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
     display: inline-block;
     width: 40px;
     transition: transform 0.2s ease-in-out;
@@ -142,6 +145,16 @@
 
 .scrolled .icons:hover path {
     fill: var(--primary-color);
+}
+
+.icons:nth-child(1):hover path {
+    stroke: var(--secondary-color);
+    fill: none;
+}
+
+.scrolled .icons:nth-child(1):hover path {
+    stroke: var(--primary-color);
+    fill: none;
 }
 
 

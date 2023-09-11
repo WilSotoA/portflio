@@ -14,5 +14,66 @@
         "title": "About Me",
         "firstParagraph": "In my life journey, I didn't have a clear idea of my professional direction until I discovered programming. I was captivated by the constant growth that this field offers.",
         "secondParagraph": "What excites me the most about web application development is the thrill of solving problems, the continuous process of acquiring new knowledge, and adhering to best practices to provide clients with an exceptional experience. While my primary focus is on the backend due to my affinity for data handling, I also enjoy working on the frontend, where I implement design patterns, optimize for SEO, and other related areas."
+    },
+    "resume": {
+        "title": "Experience and Education",
+        "resumeItem": [
+            {
+                "id": 1,
+                "category": "Experience",
+                "date": "Oct 2022 - May 2023",
+                "title": "Software Analyst and Developer <span>BTENDER</span>",
+                "desc": "Development, maintenance, and deployment of a web application for service quotations offered by the company BTENDER."
+            },
+            {
+                "id": 2,
+                "category": "Experience",
+                "date": "Oct 2022 - Apr 2023",
+                "title": "Software Analyst and Developer <span>Gelvez Distribuciones SAS</span>",
+                "desc": "Development and implementation of a web application for the company's intranet, complex SQL queries on HANA database."
+            },
+            {
+                "id": 3,
+                "category": "Education",
+                "date": "May 2023 - Present",
+                "title": "Full Stack Developer <span>SoyHenry</span>",
+                "desc": "Virtual bootcamp at SoyHenry where I learned and strengthened technologies such as JavaScript, React, Redux, Node.js, Express.js, Sequelize, among others."
+            },
+            {
+                "id": 4,
+                "category": "Education",
+                "date": "Oct 2022 - May 2023",
+                "title": "Software Analyst and Developer <span>SENA</span>",
+                "desc": "Technological studies during which I gained knowledge in documentation, requirements gathering, negotiation, and technologies like HTML, CSS, JavaScript, jQuery, PHP, JAVA, SQL."
+            }
+        ]
+    },
+    "skills": {
+        "title": "Skills",
+        "others": "Others"
+    },
+    "projects": {
+        "title": "Projects",
+        "descriptions": [
+            "Web Application for BTENDER company",
+            "Website created during the SoyHenry bootcamp",
+            "Individual project during the SoyHenry bootcamp",
+            "Website for SENA bakery",
+            "Login and registration for Gelvez intranet"
+        ]
+    },
+    "contact": {
+        "title": "Contact",
+        "name": "Name",
+        "email": "Email",
+        "message": "Message",
+        "send": "Send",
+        "success": "Message sent successfully ✅",
+        "failure": "Failed to send the message ❌"
+    },
+    "footer": {
+        "made": "Made with",
+        "for": "By WilSotoA",
+        "year": "2023"
     }
 }

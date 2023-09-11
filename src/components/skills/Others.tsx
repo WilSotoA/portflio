@@ -1,10 +1,13 @@
+import { useContext } from 'react'
+import { LangContext } from '@/context/lang'
 import Image from 'next/image'
 import styles from '../../styles/about.module.css'
 
 function Others () {
+  const { lang } = useContext(LangContext)
   return (
     <div className={styles.containerText}>
-      <h2 className={styles.skillsTitle}>Otros</h2>
+      <h2 className={styles.skillsTitle}>{lang.skills.others}</h2>
       <ul className={styles.window}>
         <li></li>
         <li></li>

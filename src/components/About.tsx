@@ -1,4 +1,3 @@
-'use client'
 import { useContext } from 'react'
 import { LangContext } from '@/context/lang'
 import styles from '../styles/about.module.css'

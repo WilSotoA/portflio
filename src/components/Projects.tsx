@@ -1,3 +1,5 @@
+import { useContext } from 'react'
+import { LangContext } from '@/context/lang'
 import styles from '../styles/projects.module.css'
 import Image from 'next/image'
 import btender from '../assets/btender.gif'
@@ -8,9 +10,10 @@ import dulcepan from '../assets/dulcepan.gif'
 import { LinkIcon, GithubIcon } from './Icons'
 
 function Projects () {
+  const { lang } = useContext(LangContext)
   return (
     <section id="projects" className={styles.projects}>
-      <h1 className={styles.title}>Proyectos</h1>
+      <h1 className={styles.title}>{lang.projects.title}</h1>
       <article className={styles.containerProjects}>
         <div className={styles.mansoryItem}>
           <div className={styles.links}>
@@ -25,7 +28,7 @@ function Projects () {
           />
           <div className={styles.content}>
             <h3>BTENDER</h3>
-            <p>Aplicación Web para compañia BTENDER</p>
+            <p>{lang.projects.descriptions[0]}</p>
             <p className={styles.skills}>
               <span>HTML &amp; CSS</span>
               <span>PHP</span>
@@ -59,7 +62,7 @@ function Projects () {
           />
           <div className={styles.content}>
             <h3>Rick and Morty</h3>
-            <p>Pagina creada en el bootcamp SoyHenry</p>
+            <p>{lang.projects.descriptions[1]}</p>
             <p className={styles.skills}>
               <span>HTML &amp; CSS</span>
               <span>JavaScript</span>
@@ -95,7 +98,7 @@ function Projects () {
           />
           <div className={styles.content}>
             <h3>Pokemon</h3>
-            <p>Proyecto individual en el bootcamp SoyHenry</p>
+            <p>{lang.projects.descriptions[2]}</p>
             <p className={styles.skills}>
               <span>HTML &amp; CSS</span>
               <span>JavaScript</span>
@@ -124,7 +127,7 @@ function Projects () {
           />
           <div className={styles.content}>
             <h3>Dulce Pan</h3>
-            <p>Pagina Web para panaderia SENA</p>
+            <p>{lang.projects.descriptions[3]}</p>
             <p className={styles.skills}>
               <span>HTML &amp; CSS</span>
               <span>JavaScript</span>
@@ -138,7 +141,7 @@ function Projects () {
           <Image className={styles.image} src={gelvez} alt="Proyecto Gelvez" />
           <div className={styles.content}>
             <h3>Gelvez intranet</h3>
-            <p>Login y registro Gelvez intranet</p>
+            <p>{lang.projects.descriptions[4]}</p>
             <p className={styles.skills}>
               <span>HTML &amp; CSS</span>
               <span>JavaScript</span>

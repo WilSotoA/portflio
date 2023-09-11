@@ -1,4 +1,3 @@
-'use client'
 import { useState, createContext } from 'react'
 import en from '@/lang/en.json'
 import es from '@/lang/es.json'

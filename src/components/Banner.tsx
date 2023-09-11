@@ -1,4 +1,3 @@
-'use client'
 import parse from 'html-react-parser'
 import Image from 'next/image'
 import styles from '../styles/banner.module.css'
@@ -7,7 +6,7 @@ import { useEffect, useState, useContext } from 'react'
 import { LangContext } from '@/context/lang'
 
 function Banner () {
-  const { lang, changeLanguage } = useContext(LangContext)
+  const { lang } = useContext(LangContext)
   const [text, setText] = useState('')
   const originalText = lang.banner.message
 
@@ -32,8 +31,10 @@ function Banner () {
     <main className={styles.main}>
       <section className={styles.containerInfo}>
         <div>
-          <article className={styles.bannerHeader} onClick={changeLanguage}>
-            <p>{lang.banner.greeting} <span>👋</span></p>
+          <article className={styles.bannerHeader}>
+            <p>
+              {lang.banner.greeting} <span>👋</span>
+            </p>
           </article>
         </div>
         <article className={styles.bannerInfo}>
