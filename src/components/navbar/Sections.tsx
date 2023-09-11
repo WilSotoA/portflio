@@ -1,8 +1,11 @@
+import { useContext } from 'react'
+import { LangContext } from '@/context/lang'
 import styles from '../../styles/nav.module.css'
 import { type SectionsProps } from '@/app/types'
 import { AboutIcon, ContactIcon, HomeIcon, WorkIcon } from '../Icons'
 
 function Sections ({ onUpdateLink, activeLink }: SectionsProps) {
+  const { lang } = useContext(LangContext)
   return (
     <ul className={styles.sections}>
       <a
@@ -15,7 +18,7 @@ function Sections ({ onUpdateLink, activeLink }: SectionsProps) {
         }}
       >
         <HomeIcon />
-        <span>Inicio</span>
+        <span>{lang.navbar.home}</span>
       </a>
       <a
         href="#about"
@@ -27,7 +30,7 @@ function Sections ({ onUpdateLink, activeLink }: SectionsProps) {
         }}
       >
         <AboutIcon />
-        <span>Sobre Mí</span>
+        <span>{lang.navbar.about}</span>
       </a>
       <a
         href="#projects"
@@ -39,7 +42,7 @@ function Sections ({ onUpdateLink, activeLink }: SectionsProps) {
         }}
       >
         <WorkIcon />
-        <span>Proyectos</span>
+        <span>{lang.navbar.projects}</span>
       </a>
       <a
         href="#contact"
@@ -51,7 +54,7 @@ function Sections ({ onUpdateLink, activeLink }: SectionsProps) {
         }}
       >
         <ContactIcon />
-        <span>Contacto</span>
+        <span>{lang.navbar.contact}</span>
       </a>
     </ul>
   )

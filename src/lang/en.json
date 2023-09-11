@@ -1,0 +1,18 @@
+{
+    "language": "en",
+    "navbar": {
+        "home": "Home",
+        "about": "About",
+        "projects": "Projects",
+        "contact": "Contact"
+    },
+    "banner": {
+        "greeting": "Hey, how's it going?",
+        "message": "My name is <span>Wilmer Andres Soto Almeida</span>, and I'm a Full Stack Developer"
+    },
+    "about": {
+        "title": "About Me",
+        "firstParagraph": "In my life journey, I didn't have a clear idea of my professional direction until I discovered programming. I was captivated by the constant growth that this field offers.",
+        "secondParagraph": "What excites me the most about web application development is the thrill of solving problems, the continuous process of acquiring new knowledge, and adhering to best practices to provide clients with an exceptional experience. While my primary focus is on the backend due to my affinity for data handling, I also enjoy working on the frontend, where I implement design patterns, optimize for SEO, and other related areas."
+    }
+}

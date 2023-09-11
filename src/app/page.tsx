@@ -6,20 +6,23 @@ import Nav from '../components/Nav'
 import styles from '../styles/home.module.css'
 import Footer from '@/components/Footer'
 import Contact from '@/components/Contact'
+import { LangProvider } from '@/context/lang'
 
 function Home () {
   return (
-    <>
-      <MouseFollower />
-      <section className={styles.main} id="home">
-        <Nav />
-        <Banner />
-      </section>
-      <About />
-      <Projects />
-      <Contact />
-      <Footer />
-    </>
+    <LangProvider>
+      <>
+        <MouseFollower />
+        <section className={styles.main} id="home">
+          <Nav />
+          <Banner />
+        </section>
+        <About />
+        <Projects />
+        <Contact />
+        <Footer />
+      </>
+    </LangProvider>
   )
 }
 export default Home

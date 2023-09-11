@@ -3,12 +3,13 @@ import parse from 'html-react-parser'
 import Image from 'next/image'
 import styles from '../styles/banner.module.css'
 import developer from '../assets/svg/programming.svg'
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useContext } from 'react'
+import { LangContext } from '@/context/lang'
 
 function Banner () {
+  const { lang, changeLanguage } = useContext(LangContext)
   const [text, setText] = useState('')
-  const originalText = `Mi nombre es <span>Wilmer Andres Soto Almeida</span> y soy
-  un desarrollador Full Stack`
+  const originalText = lang.banner.message
 
   useEffect(() => {
     let index = 0
@@ -31,8 +32,8 @@ function Banner () {
     <main className={styles.main}>
       <section className={styles.containerInfo}>
         <div>
-          <article className={styles.bannerHeader}>
-            <p>Hey, ¿que tal? <span>👋</span></p>
+          <article className={styles.bannerHeader} onClick={changeLanguage}>
+            <p>{lang.banner.greeting} <span>👋</span></p>
           </article>
         </div>
         <article className={styles.bannerInfo}>

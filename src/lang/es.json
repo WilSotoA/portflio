@@ -1,0 +1,52 @@
+{
+    "language": "es",
+    "navbar": {
+        "home": "Inicio",
+        "about": "Sobre Mí",
+        "projects": "Proyectos",
+        "contact": "Contacto"
+    },
+    "banner": {
+        "greeting": "Hey, ¿que tal?",
+        "message": "Mi nombre es <span>Wilmer Andres Soto Almeida</span> y soy un desarrollador Full Stack"
+    },
+    "about": {
+        "title": "Sobre Mí",
+        "firstParagraph": "En mi proyecto de vida, no tenía una idea clara de mi dirección profesional hasta que descubrí la programación. Quedé cautivado por el constante crecimiento que este campo ofrece.",
+        "secondParagraph": "Lo que más me entusiasma acerca del desarrollo de aplicaciones web es la emoción de resolver problemas, el continuo proceso de adquirir nuevos conocimientos y la adhesión a las mejores prácticas con el fin de proporcionar a los clientes una experiencia excepcional. Aunque mi enfoque principal se centra en el backend debido a mi afinidad por el manejo de datos, también disfruto trabajando en el frontend, donde implemento patrones de diseño, optimización para SEO y otras áreas relacionadas."
+    },
+    "resume": {
+        "title": "Experiencia y Educación",
+        "resumeItem": [
+            {
+                "id": 1,
+                "category": "Experience",
+                "date": "Oct 2022 - May 2023",
+                "title": "Analista y desarrollador de software <span>BTENDER</span>",
+                "desc": "Desarrollo, mantenimiento y despliegue de aplicación web para cotizaciones del servicio ofrecido por la compañia BTENDER"
+              },
+              {
+                "id": 2,
+                "category": "Experience",
+                "date": "Oct 2022 - Abr 2023",
+                "title":
+                  "Analista y desarrollador de software <span>Gelvez Distribuciones SAS</span>",
+                "desc": "Desarrollo e implementacion de aplicación web para intranet de la empresa, consultas SQL complejas a base de datos HANA"
+              },
+              {
+                "id": 3,
+                "category": "Education",
+                "date": "May 2023 - Act",
+                "title": "Desarrollador Full Stack <span>SoyHenry</span>",
+                "desc": "Bootcamp virtual SoyHenry en el cual aprendi y fortaleci tecnologias tales como: JavaScript, React, Redux, Node.js, Express.js, Sequelize, entre otras."
+              },
+              {
+                "id": 4,
+                "category": "Education",
+                "date": "Oct 2022 - May 2023",
+                "title": "Analista y desarrollador de software <span>SENA</span>",
+                "desc": "Estudio tecnologico, en el cual adquiri conocimientos desde documentación, recolección de requerimientos, negociación y tecnologias como HTML, CSS, JavaScript, jQuery, PHP, JAVA, SQL."
+              }
+        ]
+    }
+}
