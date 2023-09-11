@@ -68,7 +68,7 @@
         "email": "Email",
         "message": "Message",
         "send": "Send",
-        "success": "Message sent successfully ✅",
+        "sucess": "Message sent successfully ✅",
         "failure": "Failed to send the message ❌"
     },
     "footer": {
