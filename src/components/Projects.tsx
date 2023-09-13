@@ -151,6 +151,42 @@ function Projects () {
             </p>
           </div>
         </div>
+        <div className={styles.mansoryItem}>
+          <div className={styles.links}>
+            <a
+              href="https://greenland-client.vercel.app/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <LinkIcon />
+            </a>
+            <a
+              href="https://github.com/edisonrmedina/greenland"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <GithubIcon />
+            </a>
+          </div>
+          <Image
+            className={styles.image}
+            src={pokemon}
+            alt="Proyecto GreenLand"
+          />
+          <div className={styles.content}>
+            <h3>GreenLand</h3>
+            <p>{lang.projects.descriptions[4]}</p>
+            <p className={styles.skills}>
+              <span>HTML &amp; CSS</span>
+              <span>JavaScript</span>
+              <span>Node.js</span>
+              <span>React</span>
+              <span>Express.js</span>
+              <span>Sequelize</span>
+              <span>PostgreSQL</span>
+            </p>
+          </div>
+        </div>
       </article>
     </section>
   )
