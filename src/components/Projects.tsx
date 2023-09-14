@@ -7,6 +7,7 @@ import rickandmorty from '../assets/rickandmorty.gif'
 import pokemon from '../assets/pokemon.gif'
 import gelvez from '../assets/gelvez.png'
 import dulcepan from '../assets/dulcepan.gif'
+import greenland from '../assets/greenland.gif'
 import { LinkIcon, GithubIcon } from './Icons'
 
 function Projects () {
@@ -113,47 +114,6 @@ function Projects () {
         <div className={styles.mansoryItem}>
           <div className={styles.links}>
             <a
-              href="https://github.com/WilSotoA/Panaderia"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <GithubIcon />
-            </a>
-          </div>
-          <Image
-            className={styles.image}
-            src={dulcepan}
-            alt="Proyecto Dulce Pan"
-          />
-          <div className={styles.content}>
-            <h3>Dulce Pan</h3>
-            <p>{lang.projects.descriptions[3]}</p>
-            <p className={styles.skills}>
-              <span>HTML &amp; CSS</span>
-              <span>JavaScript</span>
-              <span>PHP</span>
-              <span>jQuery</span>
-              <span>MySQL</span>
-            </p>
-          </div>
-        </div>
-        <div className={styles.mansoryItem}>
-          <Image className={styles.image} src={gelvez} alt="Proyecto Gelvez" />
-          <div className={styles.content}>
-            <h3>Gelvez intranet</h3>
-            <p>{lang.projects.descriptions[4]}</p>
-            <p className={styles.skills}>
-              <span>HTML &amp; CSS</span>
-              <span>JavaScript</span>
-              <span>PHP</span>
-              <span>Laravel</span>
-              <span>PostgreSQL</span>
-            </p>
-          </div>
-        </div>
-        <div className={styles.mansoryItem}>
-          <div className={styles.links}>
-            <a
               href="https://greenland-client.vercel.app/"
               target="_blank"
               rel="noreferrer"
@@ -170,12 +130,12 @@ function Projects () {
           </div>
           <Image
             className={styles.image}
-            src={pokemon}
+            src={greenland}
             alt="Proyecto GreenLand"
           />
           <div className={styles.content}>
             <h3>GreenLand</h3>
-            <p>{lang.projects.descriptions[4]}</p>
+            <p>{lang.projects.descriptions[3]}</p>
             <p className={styles.skills}>
               <span>HTML &amp; CSS</span>
               <span>JavaScript</span>
@@ -183,6 +143,47 @@ function Projects () {
               <span>React</span>
               <span>Express.js</span>
               <span>Sequelize</span>
+              <span>PostgreSQL</span>
+            </p>
+          </div>
+        </div>
+        <div className={styles.mansoryItem}>
+          <div className={styles.links}>
+            <a
+              href="https://github.com/WilSotoA/Panaderia"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <GithubIcon />
+            </a>
+          </div>
+          <Image
+            className={styles.image}
+            src={dulcepan}
+            alt="Proyecto Dulce Pan"
+          />
+          <div className={styles.content}>
+            <h3>Dulce Pan</h3>
+            <p>{lang.projects.descriptions[4]}</p>
+            <p className={styles.skills}>
+              <span>HTML &amp; CSS</span>
+              <span>JavaScript</span>
+              <span>PHP</span>
+              <span>jQuery</span>
+              <span>MySQL</span>
+            </p>
+          </div>
+        </div>
+        <div className={styles.mansoryItem}>
+          <Image className={styles.image} src={gelvez} alt="Proyecto Gelvez" />
+          <div className={styles.content}>
+            <h3>Gelvez intranet</h3>
+            <p>{lang.projects.descriptions[5]}</p>
+            <p className={styles.skills}>
+              <span>HTML &amp; CSS</span>
+              <span>JavaScript</span>
+              <span>PHP</span>
+              <span>Laravel</span>
               <span>PostgreSQL</span>
             </p>
           </div>
